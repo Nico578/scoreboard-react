@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className="navigation">
-      <nav class="navbar bg-light fixed-top">
+      <nav class="navbar bg-light">
         <div class="container-fluid">
           <img src="../assets/img/logo.png" id="logo" alt="logo du club" />
           <a class="navbar-brand" href="#">

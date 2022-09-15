@@ -1,7 +1,14 @@
 .navigation {
+
+  
+  
   .container-fluid {
     #logo {
       width: 70px;
+    }
+    .navbar-brand {
+      font-family: $font-title;
+      font-size: 35px;
     }
 
     ul {
@@ -11,15 +18,19 @@
       a {
         text-decoration: none;
         color: black;
+        transition: 0.5s;
+        font-family: $font-1;
+        font-size: 20px;
+
         &:hover {
           color: blue;
-          font-size: 20px;
-          transition: 1s;
+          font-size: 25px;
+          transition: 0.5s ease;
         }
 
         &::after {
-            transition: 1s;
-          }
+          transition: 1s;
+        }
       }
 
       .nav-item {

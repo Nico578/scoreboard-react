@@ -4,6 +4,7 @@ import "./style/index.scss";
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+import Scoreboard from './pages/Scoreboard';
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={ <Home />} />
+                    <Route path='/Scoreboard' element={ <Scoreboard />} />
                     <Route path='/About' element={ <About />} />
                     <Route path='/Contact' element={ <Contact />} />
                 </Routes>
