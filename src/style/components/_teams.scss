@@ -44,7 +44,6 @@
 
   button {
     margin: 0 auto 20px;
-    background: none;
     border: 2px solid $color-1;
     padding: 4px 10px;
     border-radius: 10px;
@@ -60,6 +59,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  li {
+    list-style: none;
+    margin: auto 10px;
+
+    label {
+      margin-left: 10px;
+    }
   }
   #select-team {
     display: flex;

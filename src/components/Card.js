@@ -1,17 +1,22 @@
 import React from "react";
-import { teamsData } from "../data/teamsData";
 
 const Card = ({ teams }) => {
+
   return (
-    <div className="card">
-      <img src={teams.logo} alt="" id="logo" />
+    <li className="card" >
+      <div className="img">
+        <img src={teams.logo} alt="" id="logo" value={teams.name}  />
+      </div>
       <div className="infos">
         <h2>{teams.name}</h2>
-        <p>
+        <p >
           {teams.ligue} {teams.poule}
         </p>
+        <button type="submit" value={teams.name}>
+          Choisir cette équipe
+        </button>
       </div>
-    </div>
+    </li>
   );
 };
 
