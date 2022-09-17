@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { teamsData } from "../data/teamsData";
 import Card from "./Card";
@@ -9,7 +10,18 @@ const Teams = () => {
   const [selectedRadioPools, setSelectedRadioPools] = useState("");
   const [searchTeam, setSearchTeam] = useState("");
   const radios = ["Elite Masculine", "Elite Féminine", "Elite Avenir"];
-  const pools = ["Poule A", "Poule B", "Poule C", "Poule D"];
+  const pools = ["Poule A", "Poule B"];
+  const poolsAmateur = ["Poule A", "Poule B", "Poule C", "Poule D"];
+
+  const teamH = window.localStorage.teamHome;
+  const teamV = window.localStorage.teamVisitor;
+
+  function tri(a, b) {
+    if (a.name < b.name) return -1;
+    else if (a.name == b.name) return 0;
+    else return 1;
+  }
+  
 
   return (
     <div className="teams">
@@ -39,23 +51,48 @@ const Teams = () => {
           onChange={(e) => setSearchTeam(e.target.value)}
         />
       </ul>
-    {selectedRadioTeams && (
-      <ul>
-        {pools.map((poule) => (
-          <li>
-            <input
-              type="radio"
-              id={poule}
-              name="pouleRadio"
-              checked={poule === selectedRadioPools}
-              onChange={(e) => setSelectedRadioPools(e.target.id)}
-            />
-            <label htmlFor={poule}> {poule} </label>
-          </li>
-        ))}
-      </ul>
-    )}
-    
+      <div className="team-container">
+        <div className="teamHome-container">
+          <h4>Équipe à domicile</h4>
+          <p> {teamH} </p>
+        </div>
+        <div className="teamVisitor-container">
+          <h4>Équipe à l'exterieur</h4>
+          <p> {teamV} </p>
+        </div>
+      </div>
+      {selectedRadioTeams.valueOf() == "Elite Avenir" ? (
+        <ul>
+          {poolsAmateur.map((poule) => (
+            <li>
+              <input
+                type="radio"
+                id={poule}
+                name="pouleRadio"
+                checked={poule === selectedRadioPools}
+                onChange={(e) => setSelectedRadioPools(e.target.id)}
+              />
+              <label htmlFor={poule}> {poule} </label>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <ul>
+          {pools.map((poule) => (
+            <li>
+              <input
+                type="radio"
+                id={poule}
+                name="pouleRadio"
+                checked={poule === selectedRadioPools}
+                onChange={(e) => setSelectedRadioPools(e.target.id)}
+              />
+              <label htmlFor={poule}> {poule} </label>
+            </li>
+          ))}
+        </ul>
+      )}
+
       {selectedRadioPools && (
         <button
           onClick={(e) => setSelectedRadioTeams("")(setSelectedRadioPools(""))}
@@ -66,12 +103,16 @@ const Teams = () => {
 
       <ul>
         {teamsData
+        
           .filter(
             (teams) =>
               teams.name.includes(searchTeam) || teams.logo.includes(searchTeam)
           )
+          .sort(tri)
           .filter((teams) => teams.ligue.includes(selectedRadioTeams))
+          .sort(tri)
           .filter((teams) => teams.poule.includes(selectedRadioPools))
+          .sort(tri)
           .slice(0, rangeValue)
           .map((teams, index) => (
             <Card key={index} teams={teams} />

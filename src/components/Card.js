@@ -1,17 +1,20 @@
 import React from "react";
 
-const btnHome = document.querySelectorAll(".teamHome");
-console.log(btnHome);
 
 const Card = ({ teams }) => {
 
   const addStorageHome = () => {
-    let storeData = window.localStorage.team
-      ? window.localStorage.teamHome.split(",")
-      : [];
+      window.localStorage.teamHome = teams.diminutive
+      window.localStorage.logoHome = teams.logo
+      location.reload()
 
-    window.localStorage.teamHome = teams.diminutive;
-  };
+  }
+
+  const addStorageVisitor = () => {
+    window.localStorage.teamVisitor = teams.diminutive
+    window.localStorage.logoVisitor = teams.logo
+    location.reload()
+  }
 
   return (
     <li className="card">

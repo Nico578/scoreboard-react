@@ -426,6 +426,6 @@ export const teamsData = [
     diminutive: "MCVUC CFC",
     ligue: "Elite Avenir ",
     poule: "Poule D",
-    logo: "./assets/img/Elite-Avenir/nice.png",
+    logo: "./assets/img/Elite-Avenir/montpellier.png",
   },
 ];

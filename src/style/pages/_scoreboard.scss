@@ -1,9 +1,39 @@
 .scoreboard {
 
-    h1 {
-        margin: 50px auto;
-        text-align: center;
-        font-family: font-2;
+    .scoreboard-container {
+        display: flex;
+    }
+    
+
+    .visitor{
+        border-top: 2px solid black ;
+        border-left: 2px solid black ;
+        border-bottom: 2px solid black ;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .home {
+        border-top: 2px solid black ;
+        border-left: 2px solid black ;
+        border-bottom: 2px solid black ;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .home, .visitor {
+        display: flex;
+        background-color: white;
+        color: black;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            margin: auto;
+            font-family: $font-1;
+        }
     }
 
 

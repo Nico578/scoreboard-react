@@ -44,6 +44,11 @@ const Navigation = () => {
                   </NavLink>
                 </li>
                 <li class="nav-item">
+                  <NavLink to="/Teams" class="nav-link active" aria-current="page">
+                    Les équipes
+                  </NavLink>
+                </li>
+                <li class="nav-item">
                   <NavLink to="/Scoreboard" class="nav-link" >
                     Scoreboard
                   </NavLink>
