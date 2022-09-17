@@ -8,7 +8,7 @@ const Scoreboard = () => {
     
         <div className='scoreboard'>
             <Navigation />
-            <h1>Tableau des scores</h1>
+            <h1>Les équipes</h1>
             <Teams />
         </div>
     );

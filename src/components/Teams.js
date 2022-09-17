@@ -8,8 +8,8 @@ const Teams = () => {
   const [selectedRadioTeams, setSelectedRadioTeams] = useState("");
   const [selectedRadioPools, setSelectedRadioPools] = useState("");
   const [searchTeam, setSearchTeam] = useState("");
-  const radios = ["Elite Masculine", "Elite Féminine"];
-  const pools = ["Poule A", "Poule B"];
+  const radios = ["Elite Masculine", "Elite Féminine", "Elite Avenir"];
+  const pools = ["Poule A", "Poule B", "Poule C", "Poule D"];
 
   return (
     <div className="teams">
@@ -17,7 +17,7 @@ const Teams = () => {
         <input
           type="range"
           min="1"
-          max="50"
+          max="52"
           defaultValue={rangeValue}
           onChange={(e) => setRangeValue(e.target.value)}
         />
@@ -39,8 +39,8 @@ const Teams = () => {
           onChange={(e) => setSearchTeam(e.target.value)}
         />
       </ul>
-      {selectedRadioTeams && (
-        <ul>
+    {selectedRadioTeams && (
+      <ul>
         {pools.map((poule) => (
           <li>
             <input
@@ -52,15 +52,18 @@ const Teams = () => {
             />
             <label htmlFor={poule}> {poule} </label>
           </li>
-        ))} 
-        </ul>
-      )}
+        ))}
+      </ul>
+    )}
+    
       {selectedRadioPools && (
-        <button onClick={(e) => (setSelectedRadioTeams("")) (setSelectedRadioPools("")) }>
-            annuler la recherche
+        <button
+          onClick={(e) => setSelectedRadioTeams("")(setSelectedRadioPools(""))}
+        >
+          annuler la recherche
         </button>
       )}
-      
+
       <ul>
         {teamsData
           .filter(
