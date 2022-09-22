@@ -1,8 +1,11 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { addDoc, collection, doc, getDocs } from "firebase/firestore";
 import { teamsData } from "../data/teamsData";
+import { db } from "../utils/firebase.config";
+import React, { useEffect, useRef } from "react";
+import { useState } from "react";
 import Card from "./Card";
+import TeamsSelected from "./TeamsSelected";
+import axios from "axios";
 
 const Teams = () => {
   const [rangeValue, setRangeValue] = useState(8);
@@ -12,19 +15,27 @@ const Teams = () => {
   const radios = ["Elite Masculine", "Elite Féminine", "Elite Avenir"];
   const pools = ["Poule A", "Poule B"];
   const poolsAmateur = ["Poule A", "Poule B", "Poule C", "Poule D"];
+  const [matchs, setMatch] = useState([]);
 
-  const teamH = window.localStorage.teamHome;
-  const teamV = window.localStorage.teamVisitor;
+  console.log(matchs);
+
+  useEffect(() => {
+    getDocs(collection(db, "matchs"))
+      .then((res) =>
+        setMatch(
+          res.docs.map((match) => ({ ...match.data(), id: match.id })))
+    );
+  }, []);
 
   function tri(a, b) {
     if (a.name < b.name) return -1;
     else if (a.name == b.name) return 0;
     else return 1;
   }
-  
 
   return (
     <div className="teams">
+      <TeamsSelected />
       <ul className="radio-container">
         <input
           type="range"
@@ -51,16 +62,7 @@ const Teams = () => {
           onChange={(e) => setSearchTeam(e.target.value)}
         />
       </ul>
-      <div className="team-container">
-        <div className="teamHome-container">
-          <h4>Équipe à domicile</h4>
-          <p> {teamH} </p>
-        </div>
-        <div className="teamVisitor-container">
-          <h4>Équipe à l'exterieur</h4>
-          <p> {teamV} </p>
-        </div>
-      </div>
+
       {selectedRadioTeams.valueOf() == "Elite Avenir" ? (
         <ul>
           {poolsAmateur.map((poule) => (
@@ -103,7 +105,6 @@ const Teams = () => {
 
       <ul>
         {teamsData
-        
           .filter(
             (teams) =>
               teams.name.includes(searchTeam) || teams.logo.includes(searchTeam)

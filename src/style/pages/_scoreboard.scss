@@ -1,40 +1,50 @@
 .scoreboard {
+  .scoreboard-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
 
-    .scoreboard-container {
-        display: flex;
+  .visitor {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    right: 0;
+
+    margin-right: 0;
+  }
+
+  .home {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+
+    img {
+      margin-left: 5px;
     }
-    
+  }
 
-    .visitor{
-        border-top: 2px solid black ;
-        border-left: 2px solid black ;
-        border-bottom: 2px solid black ;
-        border-radius: 0 10px 10px 0;
+  .home,
+  .visitor {
+    display: flex;
+    background-color: white;
+    color: black;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      margin: auto;
     }
 
-    .home {
-        border-top: 2px solid black ;
-        border-left: 2px solid black ;
-        border-bottom: 2px solid black ;
-        border-radius: 10px 0 0 10px;
+    h2 {
+      margin: auto 50px;
+      font-family: $font-1;
+      font-size: 20px;
     }
-
-    .home, .visitor {
-        display: flex;
-        background-color: white;
-        color: black;
-
-        img {
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            margin: auto;
-            font-family: $font-1;
-        }
-    }
-
-
+  }
 }

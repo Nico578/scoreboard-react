@@ -1,0 +1,208 @@
+.mainscore {
+  .flex-container-mainscore {
+    .col {
+      display: flex;
+      margin: 50px auto;
+
+      .flex-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: auto;
+        width: 500px;
+        padding: auto;
+
+        img {
+          margin: 10px auto;
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+
+        p,
+        .scoreSetHome,
+        .scoreSetVisitor {
+          font-size: 25px;
+          margin: 10px 0;
+          font-family: $font-title;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .errorScore {
+    p {
+      padding: 10px;
+    }
+  }
+
+  .scoreboard {
+    background-color: white;
+    border: solid 2px;
+    border-radius: 50px;
+    margin: 10px auto 20px;
+    text-align: center;
+    min-height: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .scoreTitle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: black;
+  }
+
+  .scoreLive {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: black;
+  }
+
+  .scoreFirstSet,
+  .scoreSecondSet,
+  .scoreThirdSet,
+  .scoreFourSet,
+  .scoreFiveSet {
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    color: black;
+  }
+
+  /*----------------------------*/
+  /*   flex-container-buttons   */
+  /*----------------------------*/
+
+  p {
+    text-align: center;
+    margin: -10px 0;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+  }
+
+  .flex-container-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin: 0 auto 50px;
+  }
+
+  .buttonsHome,
+  .buttonsVisitor {
+    border: solid 2px;
+    border-radius: 50px;
+    max-height: 77px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  #homePlus,
+  #homeMinus,
+  #visitorPlus,
+  #visitorMinus {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    border-radius: 50px;
+    border: solid 2px;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  #homePlus:hover,
+  #homeMinus:hover,
+  #visitorPlus:hover,
+  #visitorMinus:hover {
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border-radius: 50px;
+    border: solid 2px;
+    transition: 0.5s;
+    background-color: azure;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin: auto;
+  }
+
+  #checkBox5,
+  #checkBox {
+    margin: 0 10px 0 0;
+  }
+
+  #checkBox5 {
+    position: absolute;
+    margin-left: -147px;
+    visibility: hidden;
+  }
+
+  #submitFirstSet,
+  #submitSecondSet,
+  #submitThirdSet,
+  #submitFourSet,
+  #submitFiveSet {
+    border-radius: 20px;
+    margin-left: -20px;
+    font-size: 15px;
+    position: absolute;
+    transition: 1s;
+    padding: 5px;
+    width: 200px;
+  }
+  #submitFirstSet:hover,
+  #submitSecondSet:hover,
+  #submitThirdSet:hover,
+  #submitFourSet:hover,
+  #submitFiveSet:hover {
+    border-radius: 20px;
+    font-size: 15px;
+    margin-left: -20px;
+    position: absolute;
+    transition: 1s;
+    background-color: rgb(227, 255, 185);
+    padding: 5px;
+    border: solid 2px green;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: $font-1;
+    font-weight: 100;
+    color: green;
+  }
+
+  #validMatch {
+    visibility: hidden;
+    display: flex;
+    margin: auto;
+    border-radius: 25px;
+    font-size: 22px;
+    padding: 7px;
+  }
+
+  #validMatch:hover {
+    font-size: 25px;
+    transition: 1s;
+    background-color: rgba(51, 255, 0, 0.342);
+    visibility: hidden;
+  }
+}

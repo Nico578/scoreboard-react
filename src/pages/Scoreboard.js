@@ -1,25 +1,36 @@
-import React from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import React, { useState } from "react";
+import ConnectModal from "../components/ConnectModal";
+import MainScore from "../components/MainScore";
 import Navigation from "../components/Navigation";
-import Card from "../components/Card";
-import Teams from "../components/Teams";
+import { auth } from "../utils/firebase.config";
+
 
 const Scoreboard = () => {
-  const teamV = window.localStorage.teamVisitor;
-  const logoV = window.localStorage.logoVisitor;
-  const teamH = window.localStorage.teamHome;
-  const logoH = window.localStorage.logoHome;
+  const [user, setUser] = useState(null);
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+
+  const handleLogOut = async () => {
+    await signOut(auth);
+  };
+
   return (
     <div className="scoreboard">
       <Navigation />
-      <div className="scoreboard-container">
-        <div className="home">
-          <img src={logoV} alt="" />
-          <h2>{teamV}</h2>
-        </div>
-        <div className="visitor">
-          <h2>{teamH}</h2>
-          <img src={logoH} alt="" />
-        </div>
+      <div className="app-header">
+        {user && (
+          <div className="user-infos">
+            <span>{user?.displayName[0]}</span>
+            <h4>{user?.displayName}</h4>
+            <button onClick={handleLogOut}>
+              Se deconnecter{" "}
+              <i className="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+          </div>
+        )}
+        {user ? <MainScore /> : <ConnectModal />}
       </div>
     </div>
   );

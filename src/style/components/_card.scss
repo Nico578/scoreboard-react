@@ -16,7 +16,8 @@
 
     .btn {
       display: flex;
-      margin: 10px;
+      padding: auto 10px;
+      justify-content: space-around;
       
       img {
       width: 20px;

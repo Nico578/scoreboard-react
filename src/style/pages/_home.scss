@@ -1,0 +1,21 @@
+.home {
+
+  .new-post-modal {
+    form {
+      display: grid;
+
+      textarea {
+        height: 104px;
+        font-size: 1.3rem;
+        border-radius: 10px 10px 0 10px;
+      }
+
+      input {
+        width: 100px;
+        margin-left: auto;
+        margin-top: 0px;
+        border-radius: 10px 0 10px 10px;
+      }
+    }
+  }
+}
