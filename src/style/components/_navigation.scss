@@ -1,10 +1,58 @@
 .navigation {
-
-  
-  
   .container-fluid {
+    .offcanvas-header {
+      display: flex;
+      justify-content: space-around;
+      .signUp-container {
+        width: 70%;
+        h3 {
+          color: black;
+          font-family: $font-2;
+          font-size: 20px;
+          text-align: center;
+        }
+        .signUp {
+          display: flex;
+          justify-content: space-around;
+
+          .mail {
+            justify-content: space-around;
+          }
+        }
+
+
+      }
+
+      .social {
+        top: 0;
+        color: black;
+        font-family: $font-1;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .btnsocial {
+        display: flex;
+        flex-direction: column;
+
+        #facebook,
+        #google {
+          margin: 20px auto 10px;
+          width: 150px;
+        }
+      }
+    }
+
     #logo {
       width: 70px;
+    }
+    .connection {
+      position: absolute;
+      right: 80px;
+      font-family: "font-1";
+      text-decoration: none;
+      color: white;
     }
     .navbar-brand {
       font-family: $font-title;

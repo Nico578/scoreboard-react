@@ -1,46 +1,38 @@
 import React, { useState } from "react";
-import ConnectModal from "../components/ConnectModal";
 import Navigation from "../components/Navigation";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utils/firebase.config";
 import Teams from "../components/Teams";
 
-
 const Home = () => {
+  const [user, setUser] = useState(null);
 
-    const [user, setUser] = useState(null);
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
 
-    onAuthStateChanged(auth, (currentUser) => {
-      setUser(currentUser);
-    });
-
-    const handleLogOut = async () => {
-        await signOut(auth)
-    }
+  const handleLogOut = async () => {
+    await signOut(auth);
+  };
 
   return (
     <div className="home">
-      <Navigation />
       <div className="app-header">
-
-        {user  && (
+        {user &&
+          (
             <div className="user-infos">
-                <span>{user?.displayName[0]}</span>
-                <h4>{user?.displayName}</h4>
-                <button
-                onClick={handleLogOut}
-                >
-                  Se deconnecter  <i className="fa-solid fa-arrow-right-from-bracket"></i>
-                </button>
-                
+              <span>{user?.displayName[0]}</span>
+              <h4>{user?.displayName}</h4>
+              <button onClick={handleLogOut}>
+                Se deconnecter
+                <i className="fa-solid fa-arrow-right-from-bracket"></i>
+              </button>
             </div>
-        )}
-        {user ? (
-            <Teams  />
-        ) : (
-            <ConnectModal />
-        )}
-        
+          )}
+          <div>
+            {user ? <Teams /> : null }
+          </div>
+          
       </div>
     </div>
   );

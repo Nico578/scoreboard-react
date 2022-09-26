@@ -1,5 +1,6 @@
-export const teamsData = [
-  {
+{
+  "teams" : {
+   "evreux" : {
       "id": 1,
       "name": "Evreux",
       "diminutive": "EVREUX",
@@ -7,31 +8,31 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/evreux.png"
     },
-    {
+    "rennes" : {
       "id": 2,
       "name": "Rennes EC",
       "diminutive": "REC",
       "ligue": "Elite Féminine ",
       "poule": "Poule A",
-      "logo": "./assets/img/Elite-F/rec.jpg",
+      "logo": "./assets/img/Elite-F/rec.jpg"
     },
-    {
+    "halluin" : {
       "id": 3,
       "name": "Halluin",
       "diminutive": "HALLUIN",
       "ligue": "Elite Féminine ",
       "poule": "Poule A",
-      "logo": "./assets/img/Elite-F/halluin.png",
+      "logo": "./assets/img/Elite-F/halluin.png"
     },
-    {
+    "IFVB" : {
       "id": 4,
       "name": "IFVB",
       "diminutive": "IFVB",
       "ligue": "Elite Féminine ",
       "poule": "Poule A",
-      "logo": "./assets/img/Elite-F/polefrance.jpeg",
+      "logo": "./assets/img/Elite-F/polefrance.jpeg"
     },
-    {
+    "Saint Die Des Vosges" : {
       "id": 5,
       "name": "Saint Die Des Vosges",
       "diminutive": "SAINT-DIE",
@@ -39,7 +40,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/saint-die.png"
     },
-    {
+    "burdis" : {
       "id": 6,
       "name": "Bordeaux Merignac",
       "diminutive": "BORDEAUX",
@@ -47,7 +48,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/burdis.png"
     },
-    {
+    "quimper" :{
       "id": 7,
       "name": "Quimper",
       "diminutive": "QUIMPER",
@@ -55,7 +56,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/quimper.png"
     },
-    {
+    "clamart" : {
       "id": 8,
       "name": "Clamart",
       "diminutive": "CLAMART",
@@ -63,7 +64,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/clamart.png"
     },
-    {
+    "istres":{
       "id": 9,
       "name": "Istres",
       "diminutive": "ISTRES",
@@ -71,23 +72,23 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/istres.jpg"
     },
-    {
+    "sens":{
       "id": 10,
-      "name": "Stade-Laurentin",
-      "diminutive": "STADE-LAURENTIN",
+      "name": "Sens",
+      "diminutive": "SENS",
       "ligue": "Elite Féminine ",
       "poule": "Poule B",
-      "logo": "./assets/img/Elite-F/stade-laurentin.png",
+      "logo": "./assets/img/Elite-F/sens.jpg"
     },
-    {
-      "id": 11,
-      "name": "Istres",
-      "diminutive": "ISTRES",
+    "romanais":{
+      "id": 12,
+      "name": "Romanais",
+      "diminutive": "ROMANAIS",
       "ligue": "Elite Féminine ",
       "poule": "Poule B",
-      "logo": "./assets/img/Elite-F/istres.jpg"
+      "logo": "./assets/img/Elite-F/romans.jpg"
     },
-    {
+    "mougins":{
       "id": 13,
       "name": "Mougins",
       "diminutive": "MOUGINS",
@@ -95,7 +96,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/mougins.jpg"
     },
-    {
+    "calais":{
       "id": 14,
       "name": "Calais",
       "diminutive": "CALAIS",
@@ -103,7 +104,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/calais.jpg"
     },
-    {
+    "harnes":{
       "id": 15,
       "name": "Harnes",
       "diminutive": "HARNES",
@@ -111,7 +112,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/harnes.jpg"
     },
-    {
+    "orleans":{
       "id": 16,
       "name": "Orléans",
       "diminutive": "ORLEANS",
@@ -119,7 +120,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/orleans.jpg"
     },
-    {
+    "reims":{
       "id": 17,
       "name": "Reims",
       "diminutive": "REIMS",
@@ -127,23 +128,23 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/reims.png"
     },
-    {
+    "amiens":{
       "id": 18,
       "name": "Amiens",
       "diminutive": "AMIENS",
       "ligue": "Elite Masculine ",
       "poule": "Poule A",
-      "logo": "./assets/img/Elite-M/amiens.png",
+      "logo": "./assets/img/Elite-M/amiens.png"
     },
-    {
+    "halluin-h":{
       "id": 19,
       "name": "Halluin",
       "diminutive": "HALLUIN",
       "ligue": "Elite Masculine ",
       "poule": "Poule A",
-      "logo": "./assets/img/Elite-M/halluin.png",
+      "logo": "./assets/img/Elite-M/halluin.png"
     },
-    {
+    "beauvais":{
       "id": 20,
       "name": "Beauvais",
       "diminutive": "BEAUVAIS",
@@ -151,7 +152,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/beauvais.jpg"
     },
-    {
+    "royan":{
       "id": 21,
       "name": "Royan",
       "diminutive": "ROYAN",
@@ -159,7 +160,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/royan.webp"
     },
-    {
+    "bellaing":{
       "id": 22,
       "name": "Bellaing",
       "diminutive": "BELLAING",
@@ -167,7 +168,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/bellaing.png"
     },
-    {
+    "charenton":{
       "id": 23,
       "name": "Charenton",
       "diminutive": "CHARENTON",
@@ -175,7 +176,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/charenton.png"
     },
-    {
+    "maizieres":{
       "id": 24,
       "name": "Maiziéres",
       "diminutive": "MAIZIERES",
@@ -183,7 +184,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/maizieres.jpg"
     },
-    {
+    "chalon":{
       "id": 25,
       "name": "Chalon-sur-saône",
       "diminutive": "CHALON",
@@ -191,31 +192,31 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/chalon.png"
     },
-    {
+    "conflans":{
       "id": 26,
       "name": "Conflans",
       "diminutive": "CONFLANS",
       "ligue": "Elite Masculine ",
       "poule": "Poule B",
-      "logo": "./assets/img/Elite-M/conflans.jpeg",
+      "logo": "./assets/img/Elite-M/conflans.jpeg"
     },
-    {
+    "epinal":{
       "id": 27,
       "name": "Epinal",
       "diminutive": "EPINAL",
       "ligue": "Elite Masculine ",
       "poule": "Poule B",
-      "logo": "./assets/img/Elite-M/epinal.jpg",
+      "logo": "./assets/img/Elite-M/epinal.jpg"
     },
-    {
+    "caudry":{
       "id": 28,
       "name": "Caudry",
       "diminutive": "CAUDRY",
       "ligue": "Elite Masculine ",
       "poule": "Poule B",
-      "logo": "./assets/img/Elite-M/caudry.jpg",
+      "logo": "./assets/img/Elite-M/caudry.jpg"
     },
-    {
+    "saint-brieuc":{
       "id": 29,
       "name": "Saint-Brieuc",
       "diminutive": "ST-BRIEUX",
@@ -223,7 +224,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/cesson.png"
     },
-    {
+    "calais-h":{
       "id": 30,
       "name": "Calais",
       "diminutive": "CALAIS",
@@ -231,7 +232,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/calais.png"
     },
-    {
+    "harnes-h":{
       "id": 31,
       "name": "Harnes",
       "diminutive": "HARNES",
@@ -239,7 +240,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/harnes.png"
     },
-    {
+    "grenoble":{
       "id": 32,
       "name": "Grenoble",
       "diminutive": "GRENOBLE",
@@ -247,7 +248,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/grenoble.png"
     },
-    {
+    "plessis":{
       "id": 33,
       "name": "Plessis-Robinson CFC",
       "diminutive": "PRVB CFC",
@@ -255,7 +256,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/plessis.png"
     },
-    {
+    "rennes-h":{
       "id": 35,
       "name": "Rennes CFC",
       "diminutive": "REC CFC",
@@ -263,7 +264,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/rennes.png"
     },
-    {
+    "tours":{
       "id": 36,
       "name": "Tours CFC",
       "diminutive": "TVB CFC",
@@ -271,7 +272,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/tours.png"
     },
-    {
+    "saint jean d'illac":{
       "id": 37,
       "name": "Saint-Jean D'Illac CFC",
       "diminutive": "ASI CFC",
@@ -279,7 +280,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/asi.png"
     },
-    {
+    "nantes":{
       "id": 38,
       "name": "Nantes CFC",
       "diminutive": "NRMV CFC",
@@ -287,7 +288,7 @@ export const teamsData = [
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/nantes.png"
     },
-    {
+    "paris":{
       "id": 39,
       "name": "Paris CFC",
       "diminutive": "PUC CFC",
@@ -295,7 +296,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/paris.png"
     },
-    {
+    "tourcoing":{
       "id": 40,
       "name": "Tourcoing CFC",
       "diminutive": "TLM CFC",
@@ -303,7 +304,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/tourcoing.png"
     },
-    {
+    "lyon":{
       "id": 41,
       "name": "ASU Lyon CFC",
       "diminutive": "ASUL CFC",
@@ -311,7 +312,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/lyon.png"
     },
-    {
+    "cambrai":{
       "id": 42,
       "name": "Cambrai CFC",
       "diminutive": "VBC CFC",
@@ -319,7 +320,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/cambrai.png"
     },
-    {
+    "nancy":{
       "id": 43,
       "name": " Grand Nancy CFC",
       "diminutive": "GNVB CFC",
@@ -327,7 +328,7 @@ export const teamsData = [
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/nancy.png"
     },
-    {
+    "narbonne":{
       "id": 44,
       "name": "Narbonne CFC",
       "diminutive": "NVB CFC",
@@ -335,7 +336,7 @@ export const teamsData = [
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/narbonne.png"
     },
-    {
+    "mende":{
       "id": 45,
       "name": " Mende CFC",
       "diminutive": "MVB CFC",
@@ -343,7 +344,7 @@ export const teamsData = [
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/mendes.png"
     },
-    {
+    "cnvb":{
       "id": 46,
       "name": " CNVB CFC",
       "diminutive": "CNVB CFC",
@@ -351,7 +352,7 @@ export const teamsData = [
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/cnvb.png"
     },
-    {
+    "toulouse":{
       "id": 47,
       "name": " Toulouse CFC",
       "diminutive": "TOAC-TUC CFC",
@@ -359,7 +360,7 @@ export const teamsData = [
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/toulouse.png"
     },
-    {
+    "sete":{
       "id": 48,
       "name": " Sete CFC",
       "diminutive": "ARAGO CFC",
@@ -367,7 +368,7 @@ export const teamsData = [
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/sete.png"
     },
-    {
+    "nice":{
       "id": 49,
       "name": "Nice CFC",
       "diminutive": "NVB CFC",
@@ -375,7 +376,7 @@ export const teamsData = [
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/nice.png"
     },
-    {
+    "avignon":{
       "id": 50,
       "name": "Avignon CFC",
       "diminutive": "AVB CFC",
@@ -383,7 +384,7 @@ export const teamsData = [
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/avignon.png"
     },
-    {
+    "ajaccio":{
       "id": 51,
       "name": "Ajaccio CFC",
       "diminutive": "GFCA CFC",
@@ -391,7 +392,7 @@ export const teamsData = [
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/ajaccio.png"
     },
-    {
+    "cannes":{
       "id": 52,
       "name": "Cannes CFC",
       "diminutive": "ASC CFC",
@@ -399,7 +400,7 @@ export const teamsData = [
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/cannes.png"
     },
-    {
+    "montpellier":{
       "id": 53,
       "name": "Montpellier CFC",
       "diminutive": "MCVUC CFC",
@@ -407,4 +408,5 @@ export const teamsData = [
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/montpellier.png"
     }
-  ]
+  }
+}

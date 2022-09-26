@@ -22,6 +22,7 @@ const CreatePost = ({ uid, displayName }) => {
 
   return (
     <div className="new-post-modal">
+      <h1>connected</h1>
       <form onSubmit={(e) => handlePost(e)}>
         <textarea placeholder="Message ..." ref={message}></textarea>
         <input type="submit" value="Envoyer" />

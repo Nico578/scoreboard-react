@@ -1,6 +1,5 @@
 import { onAuthStateChanged } from "firebase/auth";
 import React, { useState } from "react";
-import ConnectModal from "../components/ConnectModal";
 import MainScore from "../components/MainScore";
 import Navigation from "../components/Navigation";
 import { auth } from "../utils/firebase.config";
@@ -8,7 +7,7 @@ import { auth } from "../utils/firebase.config";
 
 const Scoreboard = () => {
   const [user, setUser] = useState(null);
-  onAuthStateChanged(auth, (currentUser) => {
+  onAuthStateChanged(auth , (currentUser) => {
     setUser(currentUser);
   });
 
@@ -30,7 +29,7 @@ const Scoreboard = () => {
             </button>
           </div>
         )}
-        {user ? <MainScore /> : <ConnectModal />}
+        {user ? <MainScore /> : <ConnectPage />}
       </div>
     </div>
   );

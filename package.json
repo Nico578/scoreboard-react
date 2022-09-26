@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "autocomplete": "^0.0.1",
     "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
     "eslint-plugin-react": "^7.31.8",
     "firebase": "^9.10.0",
     "react": "^18.2.0",

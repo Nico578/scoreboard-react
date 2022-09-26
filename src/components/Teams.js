@@ -1,10 +1,7 @@
-import { addDoc, collection, doc, getDocs } from "firebase/firestore";
 import { teamsData } from "../data/teamsData";
-import { db } from "../utils/firebase.config";
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import Card from "./Card";
-import TeamsSelected from "./TeamsSelected";
 import axios from "axios";
 
 const Teams = () => {
@@ -15,17 +12,6 @@ const Teams = () => {
   const radios = ["Elite Masculine", "Elite Féminine", "Elite Avenir"];
   const pools = ["Poule A", "Poule B"];
   const poolsAmateur = ["Poule A", "Poule B", "Poule C", "Poule D"];
-  const [matchs, setMatch] = useState([]);
-
-  console.log(matchs);
-
-  useEffect(() => {
-    getDocs(collection(db, "matchs"))
-      .then((res) =>
-        setMatch(
-          res.docs.map((match) => ({ ...match.data(), id: match.id })))
-    );
-  }, []);
 
   function tri(a, b) {
     if (a.name < b.name) return -1;
@@ -35,7 +21,6 @@ const Teams = () => {
 
   return (
     <div className="teams">
-      <TeamsSelected />
       <ul className="radio-container">
         <input
           type="range"

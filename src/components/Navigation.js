@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserContext } from "../context/userContext";
 import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
+  const {toggleModals} = useContext(UserContext)
+
   return (
     <div className="navigation">
       <nav class="navbar bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid position-relative">
           <img src="../assets/img/logo.png" id="logo" alt="logo du club" />
           <a class="navbar-brand" href="#">
             Scoreboard Volley
           </a>
+          <div
+            className="btnConnect position-absolute end-0  "
+            style={{ marginRight: "70px" }}
+          >
+            <button
+              onClick={(e) => toggleModals("signIn")}
+              className="btn btn-primary ms-2"
+            >
+              Se connecter
+            </button>
+          </div>
           <button
+            
             class="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
@@ -26,9 +41,6 @@ const Navigation = () => {
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Navigation
-              </h5>
               <button
                 type="button"
                 class="btn-close"
@@ -36,7 +48,7 @@ const Navigation = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body ">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <NavLink to="/" class="nav-link active" aria-current="page">
@@ -44,22 +56,22 @@ const Navigation = () => {
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <NavLink to="/Scoreboard" class="nav-link" >
+                  <NavLink to="/Scoreboard" class="nav-link">
                     Scoreboard
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <NavLink to="Prise-en-main" class="nav-link" >
+                  <NavLink to="Prise-en-main" class="nav-link">
                     Prise en main
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <NavLink to="/About" class="nav-link" >
+                  <NavLink to="/About" class="nav-link">
                     A propos
                   </NavLink>
                 </li>
                 <li class="nav-item">
-                  <NavLink to="Contact" class="nav-link" >
+                  <NavLink to="Contact" class="nav-link">
                     Contact
                   </NavLink>
                 </li>

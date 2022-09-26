@@ -1,18 +1,19 @@
 .card {
   margin-top: 50px;
-  background: #000000;
-  
+  background: wheat;
+  border: none;
+
   h2, p {
     text-align: center;
     font-size: 1rem;
+    color: black;
   }
 
   .infos {
     margin: 10px;
-    color: rgba(202, 202, 202, 0.877);
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     .btn {
       display: flex;
