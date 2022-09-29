@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { useEffect } from "react";
 
-const MainScore = ({ teams }) => {
+
+const MainScore = () => {
+  
   return (
-    <div className="mainscore">
-      <div className="scoreboard">
-        
-      </div>
-    </div>
+    <>
+
+    </>
   )
   
 };

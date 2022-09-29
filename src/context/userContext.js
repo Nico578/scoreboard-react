@@ -1,9 +1,12 @@
+import { onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
 import { createContext } from "react";
+import auth from "../utils/firebase.config";
 
 export const UserContext = createContext();
 
 export function UserContextProvider(props) {
+
   const [modalState, setModalState] = useState({
     signInModal: false,
   });
@@ -20,6 +23,8 @@ export function UserContextProvider(props) {
       });
     }
   };
+
+  
 
   return (
     <UserContext.Provider value={{ modalState, toggleModals }}>

@@ -1,0 +1,32 @@
+{
+    "matchs" : {
+        "journée 01" : {
+           "01" : {
+                "teamHome" : {
+                    "name" : "EVREUX",
+                    "firstSet" : 0,
+                    "secondSet" : 0,
+                    "thirdSet" : 0,
+                    "fourSet" : 0,
+                    "fiveSet" : 0,
+                    "finalSet" : 0,
+                    "points" : 0
+                },
+                "teamVisitor" : {
+                    "name" : "EVREUX",
+                    "firstSet" : 0,
+                    "secondSet" : 0,
+                    "thirdSet" : 0,
+                    "fourSet" : 0,
+                    "fiveSet" : 0,
+                    "finalSet" : 0,
+                    "points" : 0
+                },
+                "details" : {
+                    "date" : "24/09/22",
+                    "hours" : "18:30"
+                }
+            }
+        }
+    } 
+}

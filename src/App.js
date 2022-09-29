@@ -7,6 +7,8 @@ import Home from "./pages/Home";
 import Scoreboard from "./pages/Scoreboard";
 import SignInModal from "./components/SignInModal";
 import Navigation from "./components/Navigation";
+import Teams from "./components/Teams";
+import ShowTeams from "./pages/ShowTeams";
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
         <SignInModal />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/teams" element={<ShowTeams/>} />
           <Route path="/Scoreboard" element={<Scoreboard />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />

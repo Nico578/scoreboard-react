@@ -14,8 +14,8 @@ const Navigation = () => {
             Scoreboard Volley
           </a>
           <div
-            className="btnConnect position-absolute end-0  "
-            style={{ marginRight: "70px" }}
+            className="btnConnect position-absolute end-0 "
+            style={{ marginRight: "75px" }}
           >
             <button
               onClick={(e) => toggleModals("signIn")}
@@ -53,6 +53,11 @@ const Navigation = () => {
                 <li class="nav-item">
                   <NavLink to="/" class="nav-link active" aria-current="page">
                     Accueil
+                  </NavLink>
+                </li>
+                <li class="nav-item">
+                  <NavLink to="/teams" class="nav-link">
+                    Les équipes
                   </NavLink>
                 </li>
                 <li class="nav-item">

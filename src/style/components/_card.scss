@@ -1,31 +1,22 @@
 .card {
-  margin-top: 50px;
-  background: wheat;
+  margin: 10px;
   border: none;
+  background: black;
 
-  h2, p {
+  h2,
+  p {
     text-align: center;
     font-size: 1rem;
-    color: black;
   }
-
-  .infos {
-    margin: 10px;
-    display: grid;
-    align-items: center;
+  .btn {
+    display: flex;
+    padding: auto 10px;
     justify-content: space-around;
 
-    .btn {
-      display: flex;
-      padding: auto 10px;
-      justify-content: space-around;
-      
-      img {
+    img {
       width: 20px;
       height: 20px;
     }
-    }
-    
   }
 
   img {
@@ -38,9 +29,6 @@
   }
 
   .button {
-
-    
-
     button {
       width: 50px;
     }

@@ -81,11 +81,19 @@ export const teamsData = [
     },
     {
       "id": 11,
-      "name": "Istres",
-      "diminutive": "ISTRES",
+      "name": "Sens 89",
+      "diminutive": "SENS",
       "ligue": "Elite Féminine ",
       "poule": "Poule B",
-      "logo": "./assets/img/Elite-F/istres.jpg"
+      "logo": "./assets/img/Elite-F/sens.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Romanais",
+      "diminutive": "ROMANAIS",
+      "ligue": "Elite Féminine ",
+      "poule": "Poule B",
+      "logo": "./assets/img/Elite-F/romans.jpg"
     },
     {
       "id": 13,

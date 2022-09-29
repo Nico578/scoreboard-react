@@ -1,5 +1,6 @@
 import { onAuthStateChanged } from "firebase/auth";
 import React, { useState } from "react";
+import CreateMatch from "../components/CreateMatch";
 import MainScore from "../components/MainScore";
 import Navigation from "../components/Navigation";
 import { auth } from "../utils/firebase.config";
@@ -17,20 +18,7 @@ const Scoreboard = () => {
 
   return (
     <div className="scoreboard">
-      <Navigation />
-      <div className="app-header">
-        {user && (
-          <div className="user-infos">
-            <span>{user?.displayName[0]}</span>
-            <h4>{user?.displayName}</h4>
-            <button onClick={handleLogOut}>
-              Se deconnecter{" "}
-              <i className="fa-solid fa-arrow-right-from-bracket"></i>
-            </button>
-          </div>
-        )}
-        {user ? <MainScore /> : <ConnectPage />}
-      </div>
+      <CreateMatch />
     </div>
   );
 };

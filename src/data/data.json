@@ -1,6 +1,6 @@
 {
-  "teams" : {
-   "evreux" : {
+  "teams": {
+    "evreux": {
       "id": 1,
       "name": "Evreux",
       "diminutive": "EVREUX",
@@ -8,7 +8,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/evreux.png"
     },
-    "rennes" : {
+    "rennes": {
       "id": 2,
       "name": "Rennes EC",
       "diminutive": "REC",
@@ -16,7 +16,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/rec.jpg"
     },
-    "halluin" : {
+    "halluin": {
       "id": 3,
       "name": "Halluin",
       "diminutive": "HALLUIN",
@@ -24,7 +24,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/halluin.png"
     },
-    "IFVB" : {
+    "IFVB": {
       "id": 4,
       "name": "IFVB",
       "diminutive": "IFVB",
@@ -32,7 +32,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/polefrance.jpeg"
     },
-    "Saint Die Des Vosges" : {
+    "Saint Die Des Vosges": {
       "id": 5,
       "name": "Saint Die Des Vosges",
       "diminutive": "SAINT-DIE",
@@ -40,7 +40,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/saint-die.png"
     },
-    "burdis" : {
+    "burdis": {
       "id": 6,
       "name": "Bordeaux Merignac",
       "diminutive": "BORDEAUX",
@@ -48,7 +48,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/burdis.png"
     },
-    "quimper" :{
+    "quimper": {
       "id": 7,
       "name": "Quimper",
       "diminutive": "QUIMPER",
@@ -56,7 +56,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/quimper.png"
     },
-    "clamart" : {
+    "clamart": {
       "id": 8,
       "name": "Clamart",
       "diminutive": "CLAMART",
@@ -64,7 +64,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-F/clamart.png"
     },
-    "istres":{
+    "istres": {
       "id": 9,
       "name": "Istres",
       "diminutive": "ISTRES",
@@ -72,7 +72,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/istres.jpg"
     },
-    "sens":{
+    "sens": {
       "id": 10,
       "name": "Sens",
       "diminutive": "SENS",
@@ -80,7 +80,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/sens.jpg"
     },
-    "romanais":{
+    "romanais": {
       "id": 12,
       "name": "Romanais",
       "diminutive": "ROMANAIS",
@@ -88,7 +88,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/romans.jpg"
     },
-    "mougins":{
+    "mougins": {
       "id": 13,
       "name": "Mougins",
       "diminutive": "MOUGINS",
@@ -96,7 +96,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/mougins.jpg"
     },
-    "calais":{
+    "calais": {
       "id": 14,
       "name": "Calais",
       "diminutive": "CALAIS",
@@ -104,7 +104,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/calais.jpg"
     },
-    "harnes":{
+    "harnes": {
       "id": 15,
       "name": "Harnes",
       "diminutive": "HARNES",
@@ -112,7 +112,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/harnes.jpg"
     },
-    "orleans":{
+    "orleans": {
       "id": 16,
       "name": "Orléans",
       "diminutive": "ORLEANS",
@@ -120,7 +120,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-F/orleans.jpg"
     },
-    "reims":{
+    "reims": {
       "id": 17,
       "name": "Reims",
       "diminutive": "REIMS",
@@ -128,7 +128,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/reims.png"
     },
-    "amiens":{
+    "amiens": {
       "id": 18,
       "name": "Amiens",
       "diminutive": "AMIENS",
@@ -136,7 +136,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/amiens.png"
     },
-    "halluin-h":{
+    "halluin-h": {
       "id": 19,
       "name": "Halluin",
       "diminutive": "HALLUIN",
@@ -144,7 +144,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/halluin.png"
     },
-    "beauvais":{
+    "beauvais": {
       "id": 20,
       "name": "Beauvais",
       "diminutive": "BEAUVAIS",
@@ -152,7 +152,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/beauvais.jpg"
     },
-    "royan":{
+    "royan": {
       "id": 21,
       "name": "Royan",
       "diminutive": "ROYAN",
@@ -160,7 +160,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/royan.webp"
     },
-    "bellaing":{
+    "bellaing": {
       "id": 22,
       "name": "Bellaing",
       "diminutive": "BELLAING",
@@ -168,7 +168,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/bellaing.png"
     },
-    "charenton":{
+    "charenton": {
       "id": 23,
       "name": "Charenton",
       "diminutive": "CHARENTON",
@@ -176,7 +176,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/charenton.png"
     },
-    "maizieres":{
+    "maizieres": {
       "id": 24,
       "name": "Maiziéres",
       "diminutive": "MAIZIERES",
@@ -184,7 +184,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-M/maizieres.jpg"
     },
-    "chalon":{
+    "chalon": {
       "id": 25,
       "name": "Chalon-sur-saône",
       "diminutive": "CHALON",
@@ -192,7 +192,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/chalon.png"
     },
-    "conflans":{
+    "conflans": {
       "id": 26,
       "name": "Conflans",
       "diminutive": "CONFLANS",
@@ -200,7 +200,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/conflans.jpeg"
     },
-    "epinal":{
+    "epinal": {
       "id": 27,
       "name": "Epinal",
       "diminutive": "EPINAL",
@@ -208,7 +208,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/epinal.jpg"
     },
-    "caudry":{
+    "caudry": {
       "id": 28,
       "name": "Caudry",
       "diminutive": "CAUDRY",
@@ -216,7 +216,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/caudry.jpg"
     },
-    "saint-brieuc":{
+    "saint-brieuc": {
       "id": 29,
       "name": "Saint-Brieuc",
       "diminutive": "ST-BRIEUX",
@@ -224,7 +224,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/cesson.png"
     },
-    "calais-h":{
+    "calais-h": {
       "id": 30,
       "name": "Calais",
       "diminutive": "CALAIS",
@@ -232,7 +232,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/calais.png"
     },
-    "harnes-h":{
+    "harnes-h": {
       "id": 31,
       "name": "Harnes",
       "diminutive": "HARNES",
@@ -240,7 +240,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/harnes.png"
     },
-    "grenoble":{
+    "grenoble": {
       "id": 32,
       "name": "Grenoble",
       "diminutive": "GRENOBLE",
@@ -248,7 +248,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-M/grenoble.png"
     },
-    "plessis":{
+    "plessis": {
       "id": 33,
       "name": "Plessis-Robinson CFC",
       "diminutive": "PRVB CFC",
@@ -256,7 +256,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/plessis.png"
     },
-    "rennes-h":{
+    "rennes-h": {
       "id": 35,
       "name": "Rennes CFC",
       "diminutive": "REC CFC",
@@ -264,7 +264,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/rennes.png"
     },
-    "tours":{
+    "tours": {
       "id": 36,
       "name": "Tours CFC",
       "diminutive": "TVB CFC",
@@ -272,7 +272,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/tours.png"
     },
-    "saint jean d'illac":{
+    "saint jean d'illac": {
       "id": 37,
       "name": "Saint-Jean D'Illac CFC",
       "diminutive": "ASI CFC",
@@ -280,7 +280,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/asi.png"
     },
-    "nantes":{
+    "nantes": {
       "id": 38,
       "name": "Nantes CFC",
       "diminutive": "NRMV CFC",
@@ -288,7 +288,7 @@
       "poule": "Poule A",
       "logo": "./assets/img/Elite-Avenir/nantes.png"
     },
-    "paris":{
+    "paris": {
       "id": 39,
       "name": "Paris CFC",
       "diminutive": "PUC CFC",
@@ -296,7 +296,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/paris.png"
     },
-    "tourcoing":{
+    "tourcoing": {
       "id": 40,
       "name": "Tourcoing CFC",
       "diminutive": "TLM CFC",
@@ -304,7 +304,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/tourcoing.png"
     },
-    "lyon":{
+    "lyon": {
       "id": 41,
       "name": "ASU Lyon CFC",
       "diminutive": "ASUL CFC",
@@ -312,7 +312,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/lyon.png"
     },
-    "cambrai":{
+    "cambrai": {
       "id": 42,
       "name": "Cambrai CFC",
       "diminutive": "VBC CFC",
@@ -320,7 +320,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/cambrai.png"
     },
-    "nancy":{
+    "nancy": {
       "id": 43,
       "name": " Grand Nancy CFC",
       "diminutive": "GNVB CFC",
@@ -328,7 +328,7 @@
       "poule": "Poule B",
       "logo": "./assets/img/Elite-Avenir/nancy.png"
     },
-    "narbonne":{
+    "narbonne": {
       "id": 44,
       "name": "Narbonne CFC",
       "diminutive": "NVB CFC",
@@ -336,7 +336,7 @@
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/narbonne.png"
     },
-    "mende":{
+    "mende": {
       "id": 45,
       "name": " Mende CFC",
       "diminutive": "MVB CFC",
@@ -344,7 +344,7 @@
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/mendes.png"
     },
-    "cnvb":{
+    "cnvb": {
       "id": 46,
       "name": " CNVB CFC",
       "diminutive": "CNVB CFC",
@@ -352,7 +352,7 @@
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/cnvb.png"
     },
-    "toulouse":{
+    "toulouse": {
       "id": 47,
       "name": " Toulouse CFC",
       "diminutive": "TOAC-TUC CFC",
@@ -360,7 +360,7 @@
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/toulouse.png"
     },
-    "sete":{
+    "sete": {
       "id": 48,
       "name": " Sete CFC",
       "diminutive": "ARAGO CFC",
@@ -368,7 +368,7 @@
       "poule": "Poule C",
       "logo": "./assets/img/Elite-Avenir/sete.png"
     },
-    "nice":{
+    "nice": {
       "id": 49,
       "name": "Nice CFC",
       "diminutive": "NVB CFC",
@@ -376,7 +376,7 @@
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/nice.png"
     },
-    "avignon":{
+    "avignon": {
       "id": 50,
       "name": "Avignon CFC",
       "diminutive": "AVB CFC",
@@ -384,7 +384,7 @@
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/avignon.png"
     },
-    "ajaccio":{
+    "ajaccio": {
       "id": 51,
       "name": "Ajaccio CFC",
       "diminutive": "GFCA CFC",
@@ -392,7 +392,7 @@
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/ajaccio.png"
     },
-    "cannes":{
+    "cannes": {
       "id": 52,
       "name": "Cannes CFC",
       "diminutive": "ASC CFC",
@@ -400,7 +400,7 @@
       "poule": "Poule D",
       "logo": "./assets/img/Elite-Avenir/cannes.png"
     },
-    "montpellier":{
+    "montpellier": {
       "id": 53,
       "name": "Montpellier CFC",
       "diminutive": "MCVUC CFC",

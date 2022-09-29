@@ -23,7 +23,7 @@ const SignUp = () => {
       .then( async (userAuth) => {
         await updateProfile(userAuth.user, {
           displayName
-        });
+        })
       })
       .catch((error) => {
         const errorCode = error.code;

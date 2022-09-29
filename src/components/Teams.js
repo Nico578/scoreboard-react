@@ -1,8 +1,9 @@
-import { teamsData } from "../data/teamsData";
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import Card from "./Card";
-import axios from "axios";
+import { ref, onValue } from "firebase/database";
+import { database } from "../utils/firebase.config";
+import CreateMatch from "./CreateMatch";
 
 const Teams = () => {
   const [rangeValue, setRangeValue] = useState(8);
@@ -12,12 +13,24 @@ const Teams = () => {
   const radios = ["Elite Masculine", "Elite Féminine", "Elite Avenir"];
   const pools = ["Poule A", "Poule B"];
   const poolsAmateur = ["Poule A", "Poule B", "Poule C", "Poule D"];
+  const [teamsView, setTeamsView] = useState([]);
 
   function tri(a, b) {
     if (a.name < b.name) return -1;
     else if (a.name == b.name) return 0;
     else return 1;
   }
+
+  useEffect(() => {
+    onValue(ref(database, "/teams"), (snapshot) => {
+      const data = snapshot.val();
+      if (data !== null) {
+        Object.values(data).map((teams) => {
+          setTeamsView((oldArray) => [...oldArray, teams]);
+        });
+      }
+    });
+  }, []);
 
   return (
     <div className="teams">
@@ -42,12 +55,12 @@ const Teams = () => {
           </li>
         ))}
         <input
+          placeholder="Rechercher ..."
           type="search"
           defaultValue={searchTeam}
           onChange={(e) => setSearchTeam(e.target.value)}
         />
       </ul>
-
       {selectedRadioTeams.valueOf() == "Elite Avenir" ? (
         <ul>
           {poolsAmateur.map((poule) => (
@@ -87,9 +100,8 @@ const Teams = () => {
           annuler la recherche
         </button>
       )}
-
       <ul>
-        {teamsData
+        {teamsView
           .filter(
             (teams) =>
               teams.name.includes(searchTeam) || teams.logo.includes(searchTeam)
